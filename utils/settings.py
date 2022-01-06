@@ -1,10 +1,6 @@
 '''
 Settings for Connect Four. Most code is inspired by Coding with Tim.
-
 '''
-
-import pygame
-pygame.init()
 
 WHITE = (250, 250, 250)
 BLACK = (0, 0, 0)
@@ -16,6 +12,9 @@ SCREEN_HEIGHT, SCREEN_WIDTH = 700, 700
 HEIGHT, WIDTH = 600, 700
 ROWS, COLS = 6, 7
 
-SQUARE_SIZE = HEIGHT // ROWS       #might not keep this, kind of need this to help visualize where the open circles will go
+SQUARE_SIZE = HEIGHT // ROWS       # need this to help visualize where the open circles will go
 
-FPS = 120
+FPS = 60
+
+PLAY_AGAIN_BOX = (60, 400, 280, 50)     # center at (200, 425)
+QUIT_BOX = (450, 400, 100, 50)      # center at (500, 425)
